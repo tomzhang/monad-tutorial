@@ -10,7 +10,7 @@ myths
 
 functor first
 
-examples such as Option, List, Function1, Parser
+examples such as Option, List, Function1, Parser, imperative programming IO
 
 Reference monadic parsers
 
