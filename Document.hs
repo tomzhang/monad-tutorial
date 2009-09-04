@@ -61,7 +61,7 @@ chunkHtml c = xsltproc c ("chunk-html" </> "index.html") ("html" </> "chunk.xsl"
 xhtml c = xsltproc c ("xhtml" </> "index.html") ("xhtml" </> "docbook.xsl") <* copyStyle c "xhtml"
 chunkXhtml c = xsltproc c ("chunk-xhtml" </> "index.html") ("xhtml" </> "chunk.xsl") <* copyStyle c "chunk-xhtml"
 
-fop c t f = (dist c </> t) ==>> join ["java -classpath ", cp, " org.apache.fop.cli.Main -fo ", dist c, "fo" </> "index.fo", " -", t, " ", dist c, f]
+fop c t f = (dist c </> t) ==>> join ["java -classpath ", cp, " org.apache.fop.cli.Main -fo ", dist c </> "fo" </> "index.fo", " -", t, " ", dist c </> f]
 pdf c = fop c "pdf" ("pdf" </> "index.pdf")
 ps c = fop c "ps" ("ps" </> "index.ps")
 pcl c = fop c "pcl" ("pcl" </> "index.pcl")
