@@ -43,6 +43,8 @@ mkdir = createDirectoryIfMissing True
     
 cp = concat $ intersperse ":" (map ((lib ++) . (++ ".jar") . snd) dependencies)
 
+initialise = system' ("unzip -d " ++ build ++ " " ++ build ++ "docbook-xsl-1.75.0.zip")
+    
 xsltproc' c out xsl xml = "xsltproc --xinclude --nonet " ++ p (params c) ++ " --output " ++ out ++ ' ' : build ++ "docbook-xsl-" ++ docbookxslVersion c ++ '/' : xsl ++ ' ' : xml
   where
   p = concat . intersperse " " . map (\(k, v) -> "--stringparam \"" ++ k ++ "\" \"" ++ v ++ "\"")
@@ -54,7 +56,7 @@ xsltproc c o x = dist c ==>> xsltproc' c (dist c ++ o) x "src/docbook/index.xml"
   where
   params = [("html.stylesheet", style c), ("chunk.section.depth", "3"), ("paper.type", "A4"), ("draft.watermark.image", [])]
 
-copyStyle c d = copyFile (lib ++ "style.css") (dist c ++ d ++ "/style.css")
+copyStyle c d = copyFile (build ++ "style.css") (dist c ++ d ++ "/style.css")
 fo c = xsltproc c "fo/index.fo" "fo/docbook.xsl"
 html c = xsltproc c "html/index.html" "html/docbook.xsl" <* copyStyle c "html"
 chunkHtml c = xsltproc c "chunk-html/index.html" "html/chunk.xsl" <* copyStyle c "chunk-html"
