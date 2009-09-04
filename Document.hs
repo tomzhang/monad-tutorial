@@ -31,13 +31,14 @@ dist c = build ++ name c ++ "/"
 release = build ++ "release/"
 archive c = name c ++ ".tar.gz"
 lib = build ++ "lib/"
-dependencies = [("fop/0.95/build", "fop"), ("avalon-framework/4.2.0/jars", "avalon-framework-4.2.0"), ("batik-all/1.6", "batik-all-1.6"), ("commons-logging/1.0.4", "commons-logging"), ("commons-io/1.1", "commons-io-1.1"), ("xalan-j/2.7.1", "xalan"), ("xalan-j/2.7.1", "xercesImpl"), ("xalan-j/2.7.1", "xml-apis"), ("xmlgraphics-commons/1.3.1/build", "xmlgraphics-commons-1.3.1"), ("xalan-j/2.7.1", "serializer"), ("fop-hyph/1.2", "fop-hyph")]
+
+dependencies = ["fop","avalon-framework-4.2.0","batik-all-1.6","commons-logging","commons-io-1.1","xalan","xercesImpl","xml-apis","xmlgraphics-commons-1.3.1","serializer","fop-hyph"]
 
 system' k = print k >> system k
 
 mkdir = createDirectoryIfMissing True
 
-cp = concat $ intersperse ":" (map ((lib ++) . (++ ".jar") . snd) dependencies)
+cp = concat $ intersperse ":" (map ((lib ++) . (++ ".jar")) dependencies)
 
 initialise = system' ("unzip -d " ++ build ++ " " ++ build ++ "docbook-xsl-1.75.0.zip")
 
