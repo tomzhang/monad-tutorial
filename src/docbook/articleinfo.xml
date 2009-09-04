@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+    $LastChangedRevision$
+    $LastChangedDate$
+-->
+
+<!DOCTYPE articleinfo PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+    "http://www.oasis-open.org/docbook/xml/4.5CR1/docbookx.dtd">
+
+<articleinfo id="ArticleInfo">
+  <abstract id="Abstract">
+    <para>
+      TODO
+    </para>
+    </abstract>
+  <author id="Author">
+    <firstname>Tony</firstname>
+    <surname>Morris</surname>
+    <address>
+      <email>tmorris@tmorris.net</email>
+      <city>Brisbane</city>
+      <state>Queensland</state>
+      <country>Australia</country>
+    </address>
+  </author>
+  <copyright id="Copyright">
+    <year>2009</year>
+    <holder>
+      Tony Morris
+    </holder>
+  </copyright>
+  <revhistory id="RevHistory">
+    <revision>
+      <revnumber>
+        0.1
+      </revnumber>
+      <revremark>
+        Initial authoring
+      </revremark>
+    </revision>
+  </revhistory>  
+  <title id="Title">The Ultimate Monad Tutorial</title>
+</articleinfo>
