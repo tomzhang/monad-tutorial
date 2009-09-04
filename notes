@@ -17,3 +17,4 @@ Reference monadic parsers
 Monads are not particularly special; Applicative Fucntors, Arrows, Bifunctors, Cofunctors; they just receive the most
 
 For typical programmers, no maths, any potentially foreign syntax is explained.
+This document will evolve, based on discovery of requirements and reader feedback, nothing is fixed.
