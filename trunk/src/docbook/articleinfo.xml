@@ -10,6 +10,40 @@
 <articleinfo id="ArticleInfo">
   <abstract id="Abstract">
     <para>
+      The central thesis of this essay is targetted toward computer programmers of any skill level and concerns itself
+      with answering three questions.
+      <orderedlist>
+        <listitem>
+          <para>
+            What does the term monad mean?
+          </para>
+          <para>
+            The reader will have a concrete understanding of the concept that the term monad denotes. The reader will be
+            able to confidentally use the term in discussion and recognise episodes where the term is being used
+            improperly.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            What does the term monad not mean?
+          </para>
+          <para>
+            This essay will address many of the popular misunderstandings around the term monad. Readers will be
+            equipped to determine if they are observing an incidence of misappropriation of the term.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Why does the concept of a monad matter to me, a computer programmer?
+          </para>
+          <para>
+            Once the reader has been introduced to the concept of a monad, she will be introduced to the significance of
+            the concept as it applies to typical computer programming tasks.
+          </para>
+        </listitem>
+      </orderedlist>
+    </para>
+    <para>
       This work is licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License <xref linkend="Licence"/>.
     </para>
     </abstract>
