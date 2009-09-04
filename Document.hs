@@ -88,9 +88,9 @@ version' c v = do rel c
                   e <- doesFileExist vf
                   v' <- if e then readFile vf else return v
                   let r = uri c
-                  let s = ["import " ++ dist c </> ' ' : r ++ "/artifacts/" ++ v',
-                          "import " ++ release </> archive c ++ ' ' : r ++ "/artifacts/" ++ v' ++ '/' : archive c,
-                          "copy " ++ r ++ "/trunk/ " ++ r ++ "/tags/" ++ v']
+                  let s = ["import " ++ dist c </> ' ' : r </> "artifacts" </> v',
+                          "import " ++ release </> archive c ++ ' ' : r </> "artifacts" </> v' ++ '/' : archive c,
+                          "copy " ++ r </> "trunk" </> " " ++ r </> "tags" </> v']
                   mapM_ (svn c) s
                   let incv v = case second (show . (1+) . read . drop 1) (break (== '.') v) of (x, y) -> x ++ '.' : y
                   when e (writeFile vf (incv v') <* svn c ("commit " ++ vf))
