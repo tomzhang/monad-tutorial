@@ -43,7 +43,7 @@ cp = concat $ intersperse ":" (map ((lib </>) . (++ ".jar")) dependencies)
 
 initialise = system' ("unzip -d " ++ build ++ " " ++ build </> "docbook-xsl-1.75.0.zip")
 
-xsltproc' c out xsl xml = "xsltproc --xinclude --nonet " ++ p (params c) ++ " --output " ++ out ++ ' ' : build ++ "docbook-xsl-" ++ docbookxslVersion c ++ '/' : xsl ++ ' ' : xml
+xsltproc' c out xsl xml = "xsltproc --xinclude --nonet " ++ p (params c) ++ " --output " ++ out ++ ' ' : build </> "docbook-xsl-" ++ docbookxslVersion c </> xsl ++ ' ' : xml
   where
   p = concat . intersperse " " . map (\(k, v) -> "--stringparam \"" ++ k ++ "\" \"" ++ v ++ "\"")
 
