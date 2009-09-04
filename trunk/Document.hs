@@ -39,22 +39,8 @@ dependencies = [("fop/0.95/build", "fop"), ("avalon-framework/4.2.0/jars", "aval
 
 system' k = print k >> system k
 
-resolve c = wget `mapM_` d >> docbook >> s
-  where
-  d = map (\(p, f) -> artifactsUri c ++ p ++ '/' : f ++ ".jar") dependencies
-  wget k = system ("wget -c --directory=" ++ lib ++ ' ' : k)
-  docbook = wget (distributionsUri c ++ "/docbook-xsl/1.75.0/docbook-xsl-1.75.0.zip") >> system ("unzip -d " ++ build ++ ' ': lib ++ "docbook-xsl-1.75.0.zip")
-  s = wget (standardsUri c ++ '/' : styleVersion c ++ "/document-style/style.css")
-
-
-touch f = openFile f AppendMode >>= hClose
 mkdir = createDirectoryIfMissing True
-
-initialise c = do mkdir "src/docbook"
-                  touch "src/docbook/index.xml"
-                  mkdir "resources"
-                  resolve c
-
+    
 cp = concat $ intersperse ":" (map ((lib ++) . (++ ".jar") . snd) dependencies)
 
 xsltproc' c out xsl xml = "xsltproc --xinclude --nonet " ++ p (params c) ++ " --output " ++ out ++ ' ' : build ++ "docbook-xsl-" ++ docbookxslVersion c ++ '/' : xsl ++ ' ' : xml
@@ -87,7 +73,7 @@ buildAll c = mapM_ ($c) [fo, html, chunkHtml, xhtml, chunkXhtml, fo, pdf, ps, pc
 
 clean = doesDirectoryExist build >>= flip when (removeDirectoryRecursive build)
 
-cleanBuild c = clean >> resolve c >> buildAll c
+cleanBuild c = clean >> buildAll c
 
 rel c = do cleanBuild c
            let k = "tar -C " ++ build ++ " -zcf " ++ release ++ archive c ++ ' ' : name c
