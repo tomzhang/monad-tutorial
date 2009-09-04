@@ -12,16 +12,12 @@ data Config = Config {
   name :: String,
   uri :: String,
   docbookxslVersion :: String,
-  artifactsUri :: String,
-  distributionsUri :: String,
-  standardsUri :: String,
-  styleVersion :: String,
   commitMessage :: String,
   params :: [(String, String)],
   style :: String
 } deriving (Eq, Show)
 
-defaultConfig n u = Config n u "1.75.0" "http://software.tmorris.net/artifacts/" "http://software.tmorris.net/distributions/" "http://projects.tmorris.net/public/standards/artifacts/" "1.29" "Automated Versioning" [("html.stylesheet", s), ("chunk.section.depth", "3"), ("paper.type", "A4"), ("draft.watermark.image", [])] s
+defaultConfig n u = Config n u "1.75.0" "Automated Versioning" [("html.stylesheet", s), ("chunk.section.depth", "3"), ("paper.type", "A4"), ("draft.watermark.image", [])] s
   where
   s = "style.css"
 
@@ -40,11 +36,11 @@ dependencies = [("fop/0.95/build", "fop"), ("avalon-framework/4.2.0/jars", "aval
 system' k = print k >> system k
 
 mkdir = createDirectoryIfMissing True
-    
+
 cp = concat $ intersperse ":" (map ((lib ++) . (++ ".jar") . snd) dependencies)
 
 initialise = system' ("unzip -d " ++ build ++ " " ++ build ++ "docbook-xsl-1.75.0.zip")
-    
+
 xsltproc' c out xsl xml = "xsltproc --xinclude --nonet " ++ p (params c) ++ " --output " ++ out ++ ' ' : build ++ "docbook-xsl-" ++ docbookxslVersion c ++ '/' : xsl ++ ' ' : xml
   where
   p = concat . intersperse " " . map (\(k, v) -> "--stringparam \"" ++ k ++ "\" \"" ++ v ++ "\"")
