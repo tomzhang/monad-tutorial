@@ -18,3 +18,5 @@ Monads are not particularly special; Applicative Fucntors, Arrows, Bifunctors, C
 
 For typical programmers, no maths, any potentially foreign syntax is explained.
 This document will evolve, based on discovery of requirements and reader feedback, nothing is fixed.
+
+the existence of bind/unit does not make it a monad, only witnesses it, it was always a monad.
