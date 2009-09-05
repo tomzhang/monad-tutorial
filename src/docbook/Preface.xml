@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+    $LastChangedRevision$
+    $LastChangedDate$
+-->
+
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+    "http://www.oasis-open.org/docbook/xml/4.5CR1/docbookx.dtd">
+
+<sect1 id="Preface" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Preface</title>
+  <para>
+    The monad concept is surrounded by mysticism among many programmers. It is poorly understood and its importance is
+    widely under-appreciated. In this essay, I will attempt to provide a concrete understanding of the term and it will
+    also explicitly address many of the common myths. I will also provide insight into the importance of the concept
+    and why it should matter to you.
+  </para>
+  <para>
+    A few different programming languages will be used; Java, C#, Haskell and Scala to name a few. This is because
+    monads are totally unrelated to specific programming languages. Indeed, monads are prevalent to every
+    turing-complete programming language. However, you are not expected to be intimate with the syntaxes of these
+    various languages. Where there is possibility for the syntax to cause confusion, clarification will be provided.
+  </para>
+  <para>
+    This essay will not use cute metaphors. Monads are not space-suits or any such notion that can only server to
+    confuse a reader. We will not go into the heavy mathematics behind monads (category theory), however, you will be
+    expected to think somewhat abstractly at times, but only to an extent that you probably akin to.
+  </para>
+  <para>
+    I hope you enjoy this essay and it brings you enlightenment and adds to your tools to make you a more effective
+    computer programming. If you have questions, feedback or criticism, please send it to the mailing list
+    <email>monad-tutorial@googlegroups.com</email>.
+  </para>
+</sect1>
