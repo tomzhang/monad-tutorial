@@ -7,7 +7,7 @@
 <!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
     "http://www.oasis-open.org/docbook/xml/4.5CR1/docbookx.dtd">
 
-<appendix>
+<appendix id="Licence">
   <title>Licence</title>
   <subtitle>Creative Commons Attribution-Share Alike 3.0 Unported License.</subtitle>  
   <para>THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.</para>
