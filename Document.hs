@@ -71,9 +71,9 @@ rtf c = fop c "rtf" ("rtf" </> "index.rtf")
 
 buildAll c = mapM_ ($c) [fo, html, chunkHtml, xhtml, chunkXhtml, fo, pdf, ps, pcl, tiff, png, rtf]
 
-clean = doesDirectoryExist build >>= flip when (removeDirectoryRecursive build)
+clean c = doesDirectoryExist build >>= flip when (removeDirectoryRecursive (dist c))
 
-cleanBuild c = clean >> buildAll c
+cleanBuild = (>>) <$> clean <*> buildAll
 
 rel c = do cleanBuild c
            let k = "tar -C " ++ build </> " -zcf " ++ release </> archive c ++ ' ' : name c
