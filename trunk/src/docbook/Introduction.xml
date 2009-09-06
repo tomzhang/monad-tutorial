@@ -12,8 +12,8 @@
   <sect2>
     <title>Syntax</title>
     <para>
-      This tutorial will use syntax for various languages. In particular, function signature syntax differs considerably
-      among these languages. Examples are below.
+      This tutorial will use various programming languages, though you needn't be intimately familiar with their
+      differences. It is worth noting however, the differences in function signature syntax. Examples are below.
     </para>
     <example>
       <title>A Java function signature</title>
