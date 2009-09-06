@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+    $LastChangedRevision$
+    $LastChangedDate$
+-->
+
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+    "http://www.oasis-open.org/docbook/xml/4.5CR1/docbookx.dtd">
+
+<sect1 id="Introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction</title>
+  <sect2>
+    <title>Syntax</title>
+    <para>
+      This tutorial will use syntax for various languages. In particular, function signature syntax differs considerably
+      among these languages. Examples are below.
+    </para>
+    <example>
+      <title>A Java function signature</title>
+      <programlisting lang="Java">
+        &lt;A> int function(String s, A a) {
+          ...
+        }
+      </programlisting>
+    </example>
+    <example>
+      <title>A C# function signature</title>
+      <programlisting lang="C#">
+        Int Function&lt;A>(String s, A a) {
+          ...
+        }
+      </programlisting>
+    </example>
+    <example>
+      <title>A Scala function signature</title>
+      <programlisting lang="Scala">
+        def function[A](s: String, a: A): Int =
+          ...
+      </programlisting>
+    </example>
+    <example>
+      <title>A Haskell function signature</title>
+      <programlisting lang="Haskell">
+        function :: String -> a -> Int
+        function = ...
+      </programlisting>
+    </example>
+  </sect2>
+</sect1>
