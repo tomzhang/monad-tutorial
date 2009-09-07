@@ -67,10 +67,11 @@
       </example>
       Now suppose someone put forward the question, <emphasis>What is a CharSequence?</emphasis> Notice the potential
       here for equivocation. <quote>Well it's an interface!</quote> might be an appropriate response. A follow-up
-      question might be <emphasis>Is <code lang="Java">String</code> a CharSequence?</emphasis> Of course, the answer is
+      question might be <emphasis>Is String a CharSequence?</emphasis> Of course, the answer is
       yes, so <code lang="Java">String</code> is a <code>CharSequence</code> and
       <code lang="Java">CharSequence</code> is an interface, therefore, <code lang="Java">String</code> is an interface.
-      I hope you see the problem here.
+      I hope you see the problem here. Attempting to explain this problem might further confuse giving the appearance of
+      appealing to vague and vacuous notions.
     </para>
     <para>
       The question <emphasis>What is a monad?</emphasis> is only as meaningful as the question
@@ -79,7 +80,30 @@
       interface. But let's not get carried away just yet.
     </para>
     <para>
-      In this document, we will avoid referring to <emphasis>a monad</emphasis> to avoid this potential for confusion.
+      In this essay, we will avoid referring to <emphasis>a monad</emphasis> to avoid this potential for confusion.
+      This may seem like a minor point, but there are many implications and pitfalls if this terminology were to be
+      maintained. <quote>A monad</quote> so to speak, <emphasis>is an interface</emphasis>. It really is, just an
+      interface and nothing more, except for a few side-points:
+      <itemizedlist>
+        <listitem>
+          <para>
+            This interface cannot be expressed using some static type systems because they are too inflexible. Both Java
+            and C# are examples where this is not possible while Haskell and Scala are not.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            This interface is both fundamental and extremely useful in every-day programming.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            The instances of <code lang="Java">CharSequence</code> usually look rather similar and have a general common
+            theme. This can be said about many interfaces. However, the instances for a hypothetical <code>Monad</code>
+            can look vastly different, even though they all implement the same interface.
+          </para>
+        </listitem>
+      </itemizedlist>
     </para>
   </sect2>
 </sect1>
