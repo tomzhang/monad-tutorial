@@ -11,6 +11,7 @@
   <xi:include href="articleinfo.xml"/>
   <xi:include href="Preface.xml"/>
   <xi:include href="Introduction.xml"/>
+  <xi:include href="NotMonad.xml"/>
 
   <xi:include href="CC-BY-SA.xml"/>
 </article>

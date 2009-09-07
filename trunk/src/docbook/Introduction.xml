@@ -105,6 +105,8 @@
           </para> <!-- todo reference/mention that the implementation witnesses the monad which was always there; it doesn't need to implement the interface -->
         </listitem>
       </itemizedlist>
+      It is the far-reaching implications and incredible usefulness of the monad interface that takes some effort to
+      fully appreciate. So let's do that.
     </para>
   </sect2>
 </sect1>
