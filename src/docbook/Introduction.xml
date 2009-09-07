@@ -51,7 +51,7 @@
     <para>
       <emphasis>What is a monad?</emphasis> seems to be the question that is most often put forward by curious
       observers. However, within this question is the implicit assumption of the existence of
-      <emphasis>a monad</emphasis>. Let's not get mystical here.
+      <emphasis>a monad</emphasis>. Let's not get mystical here; an explanation is in order.
     </para>
     <para>
       In the core Java library is an interface called <code lang="Java">CharSequence</code>. Here is a shortened version
