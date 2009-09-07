@@ -17,9 +17,9 @@
   </para>
   <para>
     A few different programming languages will be used; Java, C#, Haskell and Scala to name a few. This is because
-    monads are totally unrelated to specific programming languages. Indeed, monads are prevalent to every
-    turing-complete programming language. However, you are not expected to be intimate with the syntaxes of these
-    various languages. Where there is possibility for the syntax to cause confusion, clarification will be provided.
+    monads are totally unrelated to specific programming languages. Indeed, monads are relavent to any typical
+    programming language. However, you are not expected to be intimate with the syntaxes of these various languages.
+    Where there is possibility for the syntax to cause confusion, clarification will be provided.
   </para>
   <para>
     This essay will not use cute metaphors as in other monad tutorials. Monads are not space-suits or any such notion
