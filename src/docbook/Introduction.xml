@@ -87,20 +87,21 @@
       <itemizedlist>
         <listitem>
           <para>
-            This interface cannot be expressed using some static type systems because they are too inflexible. Both Java
-            and C# are examples where this is not possible while Haskell and Scala are not.
+            The Monad interface cannot be expressed using some static type systems because they are too inflexible. Both
+            Java and C# are examples where this is not possible while it is possible using both Haskell and Scala
           </para>
         </listitem>
         <listitem>
           <para>
-            This interface is both fundamental and extremely useful in every-day programming.
+            The Monad interface is both fundamental and extremely useful in every-day programming, much more so than the
+            typical interfaces that you might find.
           </para>
         </listitem>
         <listitem>
           <para>
             The instances of <code lang="Java">CharSequence</code> usually look rather similar and have a general common
             theme. This can be said about many interfaces. However, the instances for a hypothetical <code>Monad</code>
-            can look vastly different, even though they all implement the same interface.
+            interface can look vastly different, even though they all implement the same interface.
           </para> <!-- todo reference/mention that the implementation witnesses the monad which was always there; it doesn't need to implement the interface -->
         </listitem>
       </itemizedlist>
