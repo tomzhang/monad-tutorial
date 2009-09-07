@@ -54,8 +54,8 @@
       <emphasis>a monad</emphasis>. Let's not get mystical here; an explanation is in order.
     </para>
     <para>
-      In the core Java library is an interface called <code lang="Java">CharSequence</code>. Here is a shortened version
-      of that interface:
+      Consider the example of an interface called <code lang="Java">CharSequence</code> in the core Java library. Here
+      is a shortened version of that interface:
       <example>
         <title><code lang="Java">java.lang.CharSequence</code> (abbreviated)</title>
         <programlisting>
