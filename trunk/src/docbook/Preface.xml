@@ -24,7 +24,7 @@
   <para>
     This essay will not use cute metaphors as in other monad tutorials. Monads are not space-suits or any such notion
     that may confuse a reader. We will not go into the heavy mathematics behind monads (category theory), however, you
-    will be expected to think somewhat abstractly at times, but only to an extent that you probably akin to.
+    will be expected to think somewhat abstractly at times, but only to an extent that you are probably familiar with.
   </para>
   <para>
     I intend to be thorough in debunking many of the misunderstandings and providing all the tools to help you
