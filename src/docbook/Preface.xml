@@ -11,7 +11,7 @@
   <title>Preface</title>
   <para>
     The monad concept is surrounded by mysticism among many programmers. It is poorly understood and its importance is
-    widely under-appreciated. In this essay, I will attempt to provide a concrete understanding of the term and it will
+    widely under-appreciated. In this essay, I will attempt to provide a concrete understanding of the term and I will
     also explicitly address many of the common myths. I will also provide insight into the importance of the concept
     and why it should matter to you.
   </para>
