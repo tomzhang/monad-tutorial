@@ -101,7 +101,7 @@
             The instances of <code lang="Java">CharSequence</code> usually look rather similar and have a general common
             theme. This can be said about many interfaces. However, the instances for a hypothetical <code>Monad</code>
             can look vastly different, even though they all implement the same interface.
-          </para>
+          </para> <!-- todo reference/mention that the implementation witnesses the monad which was always there; it doesn't need to implement the interface -->
         </listitem>
       </itemizedlist>
     </para>
