@@ -83,7 +83,7 @@
       In this essay, we will avoid referring to <emphasis>a monad</emphasis> to avoid this potential for confusion.
       This may seem like a minor point, but there are many implications and pitfalls if this terminology were to be
       maintained. <quote>A monad</quote> so to speak, <emphasis>is an interface</emphasis>. It really is, just an
-      interface and nothing more, except for a few side-points:
+      interface and nothing more, with a few notable remarks:
       <itemizedlist>
         <listitem>
           <para>
