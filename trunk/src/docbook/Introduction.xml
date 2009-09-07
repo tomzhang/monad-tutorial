@@ -70,8 +70,8 @@
       question might be <emphasis>Is String a CharSequence?</emphasis> Of course, the answer is
       yes, so <code lang="Java">String</code> is a <code>CharSequence</code> and
       <code lang="Java">CharSequence</code> is an interface, therefore, <code lang="Java">String</code> is an interface.
-      I hope you see the problem here. Attempting to explain this problem might further confuse giving the appearance of
-      appealing to vague and vacuous notions.
+      I hope you see the problem here. Attempting to explain this problem might confuse further and give the appearance
+      of appealing to vague and vacuous notions.
     </para>
     <para>
       The question <emphasis>What is a monad?</emphasis> is only as meaningful as the question
