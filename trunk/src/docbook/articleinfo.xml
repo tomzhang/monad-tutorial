@@ -66,7 +66,7 @@
   <revhistory id="RevHistory">
     <revision>
       <revnumber>
-        0.1 LastChangedRevision $LastChangedRevision$
+        0.1 (LastChangedRevision $LastChangedRevision$)
       </revnumber>
       <revremark>
         Initial authoring
