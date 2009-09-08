@@ -18,9 +18,8 @@
             What does the term monad mean?
           </para>
           <para>
-            The reader will have a concrete understanding of the concept that the term monad denotes. The reader will be
-            able to confidentally use the term in discussion and recognise episodes where the term is being used
-            improperly.
+            You will have a concrete understanding of the concept that the term monad denotes. You will be able to
+            confidentally use the term in discussion and recognise episodes where the term is being used improperly.
           </para>
         </listitem>
         <listitem>
@@ -28,8 +27,8 @@
             What does the term monad not mean?
           </para>
           <para>
-            This essay will address many of the popular misunderstandings around the term monad. Readers will be
-            equipped to determine if they are observing an incident of misappropriation of the term.
+            This essay will address many of the popular misunderstandings around the term monad. You will be equipped to
+            determine if you are observing an incident of misappropriation of the term.
           </para>
         </listitem>
         <listitem>
@@ -37,8 +36,8 @@
             Why does the concept of a monad matter to me, a computer programmer?
           </para>
           <para>
-            Once the reader has been introduced to the concept of a monad, she will be introduced to its significance
-            as it applies to typical computer programming tasks.
+            Once you have been introduced to the concept of a monad, you will be introduced to its significance as it
+            applies to typical computer programming tasks.
           </para>
         </listitem>
       </orderedlist>
