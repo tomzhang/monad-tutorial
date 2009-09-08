@@ -51,7 +51,8 @@
     <para>
       <emphasis>What is a monad?</emphasis> seems to be the question that is most often put forward by curious
       observers. However, within this question is the implicit assumption of the existence of
-      <emphasis>a monad</emphasis>. Let's not get mystical here; an explanation is in order.
+      <emphasis>a monad</emphasis> as if it were a thing that has some kind of observable manifestation. Let's not get
+      mystical here; an explanation is in order.
     </para>
     <para>
       Consider the example of an interface called <code lang="Java">CharSequence</code> in the standard Java library.
@@ -83,7 +84,7 @@
       In this essay, we will avoid referring to <emphasis>a monad</emphasis> to avoid this potential for confusion.
       This may seem like a minor point, but there are many implications and pitfalls if this terminology were to be
       maintained. <quote>A monad</quote> so to speak, <emphasis>is an interface</emphasis>. It really is, just an
-      interface and nothing more, with a few notable remarks:
+      interface and nothing more, which is why is the only reason it appears intangible, with a few notable remarks:
       <itemizedlist>
         <listitem>
           <para>
