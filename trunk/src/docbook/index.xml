@@ -12,6 +12,9 @@
   <xi:include href="Preface.xml"/>
   <xi:include href="Introduction.xml"/>
   <xi:include href="NotMonad.xml"/>
+  <xi:include href="Functor.xml"/>
+  <xi:include href="Monad.xml"/>
+  <xi:include href="MonadExamples.xml"/>
 
   <xi:include href="CC-BY-SA.xml"/>
 </article>
