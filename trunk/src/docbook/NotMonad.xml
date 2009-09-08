@@ -29,6 +29,11 @@
       between monads and side-effects is incredibly weak at a stretch, but non-existent in practical terms. Later on,
       once we know what monad means, we will see a demonstration of how side-effects can be represented using monads. <!-- todo reference -->
     </para>
+    <para>
+      To fully appreciate this point, consider that monads are not specific to any particular programming language. For
+      example, monads are relevant in a language that could not possibly be described as a
+      <quote>pure functional programming language</quote>, such as Java. The next section will discuss this. 
+    </para>
   </sect2>
   <sect2>
     <title>Monads and Programming Languages</title>
