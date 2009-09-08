@@ -77,19 +77,24 @@
     <para>
       The question <emphasis>What is a monad?</emphasis> is only as meaningful as the question
       <emphasis>What is a CharSequence?</emphasis> Indeed, if Java's type system were flexible enough, one would begin
-      by writing: <code lang="Java">interface Monad</code> and we would write suitable implementatiions of this
-      interface. But let's not get carried away just yet.
+      by writing: <code lang="Java">interface Monad</code> and we would write suitable implementations of this
+      interface and this would provide the answer to <emphasis>What is a Monad?</emphasis>. But let's not get carried
+      away just yet.
     </para>
     <para>
       In this essay, we will avoid referring to <emphasis>a monad</emphasis> to avoid this potential for confusion.
       This may seem like a minor point, but there are many implications and pitfalls if this terminology were to be
-      maintained. <quote>A monad</quote> so to speak, <emphasis>is an interface</emphasis>. It really is, just an
-      interface and nothing more, which is why is the only reason it appears intangible, with a few notable remarks:
+      maintained. <quote>A monad</quote> so to speak, <emphasis>is an interface</emphasis>. It's just an interface and
+      nothing more, which is why it may appear intangible (but it's just an interface!), with a few notable remarks:
       <itemizedlist>
         <listitem>
           <para>
             The Monad interface cannot be expressed using some static type systems because they are too inflexible. Both
-            Java and C# are examples where this is not possible while it is possible using both Haskell and Scala
+            Java and C#<footnote>
+              <para>
+                Other examples include F#, Visual Basic, OCaml, C.
+              </para>
+            </footnote> are examples where this is not possible while it is possible using both Haskell and Scala
           </para>
         </listitem>
         <listitem>
