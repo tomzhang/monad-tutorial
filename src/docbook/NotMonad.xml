@@ -32,7 +32,7 @@
     <para>
       To fully appreciate this point, consider that monads are not specific to any particular programming language. For
       example, monads are relevant in a language that could not possibly be described as a
-      <quote>pure functional programming language</quote>, such as Java. The next section will discuss this. 
+      <quote>pure functional programming language</quote>, such as Java. The next section will discuss this. <!-- todo reference -->
     </para>
   </sect2>
   <sect2>
