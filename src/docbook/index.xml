@@ -15,6 +15,9 @@
   <xi:include href="Functor.xml"/>
   <xi:include href="Monad.xml"/>
   <xi:include href="MonadExamples.xml"/>
+  <xi:include href="LanguageSupport.xml"/>
+  <xi:include href="ApplicativeFunctor.xml"/>
+  <xi:include href="Arrow.xml"/>
 
   <xi:include href="CC-BY-SA.xml"/>
 </article>
