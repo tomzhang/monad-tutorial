@@ -68,10 +68,13 @@
       <revnumber>
         0.1 ($LastChangedRevision$)
       </revnumber>
+      <date>
+        $LastChangedDate$
+      </date>
       <revremark>
         Initial authoring
       </revremark>
     </revision>
-  </revhistory>  
+  </revhistory>
   <title id="Title">The Answer To The Ultimate Question of Monads, Programming and Everything</title>
 </articleinfo>
