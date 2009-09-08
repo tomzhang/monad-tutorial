@@ -14,6 +14,7 @@
   <xi:include href="NotMonad.xml"/>
   <xi:include href="Functor.xml"/>
   <xi:include href="Monad.xml"/>
+  <xi:include href="Why.xml"/>
   <xi:include href="MonadExamples.xml"/>
   <xi:include href="LanguageSupport.xml"/>
   <xi:include href="ApplicativeFunctor.xml"/>
