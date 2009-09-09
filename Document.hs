@@ -40,6 +40,8 @@ system' = (>>) <$> print <*> system
 
 mkdir = createDirectoryIfMissing True
 
+rmdir = (>>=) <$> doesDirectoryExist <*> flip when . removeDirectoryRecursive
+
 cp = concat $ intersperse ":" (map ((lib </>) . (++ ".jar")) dependencies)
 
 initialise = system' ("unzip -d " ++ build ++ " " ++ build </> "docbook-xsl-1.75.0.zip")
@@ -98,11 +100,15 @@ version' c v = do rel c
 
 version c = version' c []
 
-tag c = do fo c
+tag c = do t <- getTemporaryDirectory
+           let mt = t </> "monad-tutorial"
+           rmdir mt
+           system' ("svn export " ++ uri c ++ "/trunk " ++ mt)
+           setCurrentDirectory mt
+           fo c
            pdf c
            html c
            chunkHtml c
            rtf c
            d <- show . zonedTimeToUTC <$> getZonedTime
-           let r = uri c
-           svn c ("import " ++ dist c </> " \"" ++ r ++ "/tags/continuous/" ++ d ++ "\"")
+           svn c ("import " ++ dist c </> " \"" ++ uri c ++ "/tags/continuous/" ++ d ++ "\"")
