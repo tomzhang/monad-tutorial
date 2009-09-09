@@ -9,6 +9,10 @@
 
 <sect1 id="NotMonad" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>¬Monad</title>
+  <para>
+    In this section, I will cover off on some of the common misunderstandings around monads. Particularly those
+    misunderstandings that may hinder progress in understanding the concept.
+  </para>
   <sect2>
     <title>Side-Effects</title>
     <para>
