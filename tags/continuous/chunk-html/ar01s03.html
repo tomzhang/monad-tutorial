@@ -1,0 +1,20 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>¬Monad</title><link rel="stylesheet" href="style.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.75.0"><link rel="home" href="index.html" title="The Answer To The Ultimate Question of Monads, Programming and Everything"><link rel="up" href="index.html" title="The Answer To The Ultimate Question of Monads, Programming and Everything"><link rel="prev" href="ar01s02s02.html" title="Terminology"><link rel="next" href="ar01s03s02.html" title="Monads and Programming Languages"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">¬Monad</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ar01s02s02.html">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="ar01s03s02.html">Next</a></td></tr></table><hr></div><div class="sect1" title="¬Monad"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="NotMonad"></a>¬Monad</h2></div></div></div><div class="sect2" title="Side-Effects"><div class="titlepage"><div><div><h3 class="title"><a name="id2775704"></a>Side-Effects</h3></div></div></div><p>
+      It is a common misunderstanding that monads are all about side-effects, particularly in a pure functional
+      programming language. It is true that monads can provide a mechanism for controlling side-effects, but this is
+      only one instance of the use of monads.
+    </p><p>
+      To draw an analogy, suppose you wrote a function to compute the length of a linked list. If you wrote this
+      function responsibly, it would work on a list of any element type. In other words, the function would be
+      <span class="emphasis"><em>polymorphic</em></span>. You might use this function to compute the length of a list of
+      <code class="code">Banana</code> elements, but this would not be sufficient to say that your length function is in some way
+      related to the <code class="code">Banana</code> type.
+    </p><p>
+      Just like you can compute the length of a list of <code class="code">Banana</code> elements, it is also true that you can use
+      monads to represent side-effects, but the relationship does not go any further. In other words, the relationship
+      between monads and side-effects is incredibly weak at a stretch, but non-existent in practical terms. Later on,
+      once we know what monad means, we will see a demonstration of how side-effects can be represented using monads. 
+    </p><p>
+      To fully appreciate this point, consider that monads are not specific to any particular programming language. For
+      example, monads are relevant in a language that could not possibly be described as a
+      <span class="quote">&#8220;<span class="quote">pure functional programming language</span>&#8221;</span>, such as Java. The next section will discuss this. 
+    </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ar01s02s02.html">Prev</a> </td><td width="20%" align="center"> </td><td width="40%" align="right"> <a accesskey="n" href="ar01s03s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Terminology </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Monads and Programming Languages</td></tr></table></div></body></html>
