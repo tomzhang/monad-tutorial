@@ -1,0 +1,51 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>The Answer To The Ultimate Question of Monads, Programming and Everything</title><link rel="stylesheet" href="style.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.75.0"><meta name="description" content="The central thesis of this essay is targeted toward computer programmers of any skill level and concerns itself with answering three questions. What does the term monad mean? You will have a concrete understanding of the concept that the term monad denotes. You will be able to confidentally use the term in discussion and recognise episodes where the term is being used improperly. What does the term monad not mean? This essay will address many of the popular misunderstandings around the term monad. You will be equipped to determine if you are observing an incident of misappropriation of the term. Why does the concept of a monad matter to me, a computer programmer? Once you have been introduced to the concept of a monad, you will be introduced to its significance as it applies to typical computer programming tasks. This work is licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License ."><link rel="home" href="index.html" title="The Answer To The Ultimate Question of Monads, Programming and Everything"><link rel="next" href="ar01s02.html" title="Introduction"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">The Answer To The Ultimate Question of Monads, Programming and Everything</th></tr><tr><td width="20%" align="left"> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="ar01s02.html">Next</a></td></tr></table><hr></div><div class="article" title="The Answer To The Ultimate Question of Monads, Programming and Everything"><div class="titlepage"><div><div><h2 class="title"><a name="MonadTutorial"></a>The Answer To The Ultimate Question of Monads, Programming and Everything</h2></div><div><div class="author"><h3 class="author"><span class="firstname">Tony</span> <span class="surname">Morris</span></h3></div></div><div><p class="copyright">Copyright © 2009 
+      Tony Morris
+    </p></div><div><div class="revhistory"><table border="1" width="100%" summary="Revision history"><tr><th align="left" valign="top" colspan="2"><b>Revision History</b></th></tr><tr><td align="left">Revision 
+        0.1 ($LastChangedRevision$)
+      </td><td align="left">
+        $LastChangedDate$
+      </td></tr><tr><td align="left" colspan="2">
+        Initial authoring
+      </td></tr></table></div></div><div><div class="abstract" title="Abstract"><a name="Abstract"></a><p class="title"><b>Abstract</b></p><p>
+      The central thesis of this essay is targeted toward computer programmers of any skill level and concerns itself
+      with answering three questions.
+      </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
+            What does the term monad mean?
+          </p><p>
+            You will have a concrete understanding of the concept that the term monad denotes. You will be able to
+            confidentally use the term in discussion and recognise episodes where the term is being used improperly.
+          </p></li><li class="listitem"><p>
+            What does the term monad not mean?
+          </p><p>
+            This essay will address many of the popular misunderstandings around the term monad. You will be equipped to
+            determine if you are observing an incident of misappropriation of the term.
+          </p></li><li class="listitem"><p>
+            Why does the concept of a monad matter to me, a computer programmer?
+          </p><p>
+            Once you have been introduced to the concept of a monad, you will be introduced to its significance as it
+            applies to typical computer programming tasks.
+          </p></li></ol></div><p>
+    </p><p>
+      This work is licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License <a class="xref" href="apa.html" title="A. Licence">Appendix A, <i>Licence</i></a>.
+    </p></div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="sect1"><a href="index.html#Preface">Preface</a></span></dt><dt><span class="sect1"><a href="ar01s02.html">Introduction</a></span></dt><dd><dl><dt><span class="sect2"><a href="ar01s02.html#id2783533">Syntax</a></span></dt><dt><span class="sect2"><a href="ar01s02s02.html">Terminology</a></span></dt></dl></dd><dt><span class="sect1"><a href="ar01s03.html">¬Monad</a></span></dt><dd><dl><dt><span class="sect2"><a href="ar01s03.html#id2783364">Side-Effects</a></span></dt><dt><span class="sect2"><a href="ar01s03s02.html">Monads and Programming Languages</a></span></dt></dl></dd><dt><span class="sect1"><a href="ar01s04.html">What does Functor mean?</a></span></dt><dt><span class="sect1"><a href="ar01s05.html">What does Monad mean?</a></span></dt><dt><span class="sect1"><a href="ar01s06.html">Why do Monads matter to me?</a></span></dt><dt><span class="sect1"><a href="ar01s07.html">Monad Instances</a></span></dt><dd><dl><dt><span class="sect2"><a href="ar01s07.html#id2784681">Option (Nullable)</a></span></dt><dt><span class="sect2"><a href="ar01s07s02.html">List</a></span></dt><dt><span class="sect2"><a href="ar01s07s03.html">Identity</a></span></dt><dt><span class="sect2"><a href="ar01s07s04.html">Parsers</a></span></dt><dt><span class="sect2"><a href="ar01s07s05.html">Functions</a></span></dt><dt><span class="sect2"><a href="ar01s07s06.html">Continuations</a></span></dt><dt><span class="sect2"><a href="ar01s07s07.html">State</a></span></dt><dt><span class="sect2"><a href="ar01s07s08.html">Writer</a></span></dt><dt><span class="sect2"><a href="ar01s07s09.html">Side-Effects</a></span></dt></dl></dd><dt><span class="sect1"><a href="ar01s08.html">Language Support for Monads</a></span></dt><dd><dl><dt><span class="sect2"><a href="ar01s08.html#id2784044">C#/LINQ</a></span></dt><dt><span class="sect2"><a href="ar01s08s02.html">Scala</a></span></dt><dt><span class="sect2"><a href="ar01s08s03.html">Haskell</a></span></dt></dl></dd><dt><span class="sect1"><a href="ar01s09.html">OK, so Applicative Functor?</a></span></dt><dt><span class="sect1"><a href="ar01s10.html">What about Arrow then?</a></span></dt><dd><dl><dt><span class="sect2"><a href="ar01s10.html#id2784710">Monoids</a></span></dt><dt><span class="sect2"><a href="ar01s10s02.html">Arrows</a></span></dt></dl></dd><dt><span class="appendix"><a href="apa.html">A. Licence</a></span></dt></dl></div><div class="sect1" title="Preface"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Preface"></a>Preface</h2></div></div></div><p>
+    The monad concept is surrounded by mysticism among many programmers. It is poorly understood and its importance is
+    widely under-appreciated. In this essay, I will attempt to provide a concrete understanding of the term and I will
+    also explicitly address many of the common myths. I will also provide insight into the importance of the concept
+    and why it should matter to you.
+  </p><p>
+    A few different programming languages will be used; Java, C#, Haskell and Scala to name a few. This is because
+    monads are unrelated to specific programming languages. Indeed, monads are relavent to any typical programming
+    language. However, you are not expected to be intimate with the syntaxes of these various languages. Where there is
+    possibility for the syntax to cause confusion, clarification will be provided.
+  </p><p>
+    This essay will not use cute metaphors as in other monad tutorials. Monads are not space-suits or any such notion
+    that may confuse a reader. We will not go into the heavy mathematics behind monads (category theory), however, you
+    will be expected to think somewhat abstractly at times, but only to an extent that you are probably familiar with.
+  </p><p>
+    I intend to be thorough in debunking many of the misunderstandings and providing all the tools to help you
+    understand this apparently elusive computer programming concept and its important application. It must be said that
+    that monads are a simpler concept than their reputation would have you believe and you will soon see why. I hope you
+    enjoy this essay and it brings you enlightenment and adds to your tools to make you a more effective computer
+    programmer. If you have questions, feedback or criticism, please send it to the mailing list
+    <code class="email">&lt;<a class="email" href="mailto:monad-tutorial@googlegroups.com">monad-tutorial@googlegroups.com</a>&gt;</code>.
+  </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"> </td><td width="20%" align="center"> </td><td width="40%" align="right"> <a accesskey="n" href="ar01s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top"> </td><td width="20%" align="center"> </td><td width="40%" align="right" valign="top"> Introduction</td></tr></table></div></body></html>
