@@ -18,5 +18,18 @@
       therefore, just <quote>functors</quote>).
     </para>
   </sect2>
+  <sect2>
+    <title>Funk</title>
+    <para>
+      Like monad, functor is a computational concept. It is significantly easier to understand than the monad concept.
+      It too, is represented by an <quote>interface</quote> or the equivalent for a specific programming language. Also
+      like monad, this interface cannot be expressed in type systems such as Java or C#. We will therefore, use these
+      languages to provide an introduction to concrete examples (which can be represented), then move into the
+      definition using other languages.
+    </para>
+    <para>
+      
+    </para>
+  </sect2>
   <!-- todo -->
 </sect1>
