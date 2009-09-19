@@ -9,7 +9,14 @@
 
 <sect1 id="Functor" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>What does Functor mean?</title>
-  <para>
-    TODO
-  </para>
+  <sect2>
+    <title>Terminology</title>
+    <para>
+      There are many different types of functors; exponential functors, binary functors, contravariant functors,
+      convariant functors to name a few. When the term functor is used unqualified, it is safe to assume that the use of
+      the term refers to covariant functors. This entire essay concerns itself only with covariant functors (and
+      therefore, just <quote>functors</quote>).
+    </para>
+  </sect2>
+  <!-- todo -->
 </sect1>
